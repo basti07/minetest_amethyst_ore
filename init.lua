@@ -31,7 +31,7 @@ if minetest.get_modpath("3d_armor") then
 		description = S("Amethyst Helmet"),
 		inventory_image = "amethyst_helmet_amethyst_preview.png",
 		armor_groups = {fleshy=10},
-		groups = {armor_head=1, armor_heal=3, armor_use=50},
+		groups = {armor_head=1, armor_heal=20, armor_use=50, physics_jump=0.5},
 		damage_groups = {cracky=1, snappy=2, choppy=2, crumbly=1, level=2},
 	})
 	
@@ -41,7 +41,7 @@ if minetest.get_modpath("3d_armor") then
 		description = S("Amethyst chestplate"),
 		inventory_image = "amethyst_chestplate_amethyst_preview.png",
 		armor_groups = {fleshy=10},
-		groups = {armor_torso=1, armor_heal=5, armor_use=50},
+		groups = {armor_torso=1, armor_heal=20, armor_use=50, armor_fire=1},
 		damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 	})
 	
@@ -50,9 +50,9 @@ if minetest.get_modpath("3d_armor") then
 
 	armor:register_armor("amethyst:leggings_amethyst", {
 		description = S("Amethyst Leggigns"),
-		inventory_image = "amethyst_leggins_amethyst_preview.png",
+		inventory_image = "amethyst_leggings_amethyst_preview.png",
 		armor_groups = {fleshy=10},
-		groups = {armor_legs=1, armor_heal=5, armor_use=800},
+		groups = {armor_legs=1, armor_heal=20, armor_use=50},
 		damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 	})
 	
@@ -60,9 +60,9 @@ if minetest.get_modpath("3d_armor") then
 
 	armor:register_armor("amethyst:boots_amethyst", {
 		description = S("Amethyst Boots"),
-		inventory_image = "amethyst_boots.png",
+		inventory_image = "amethyst_boots_amethyst_preview.png",
 		armor_groups = {fleshy=10},
-		groups = {armor_feet=1, armor_heal=5, armor_use=800, physics_speed = 1, puts_out_fire = 5},
+		groups = {armor_feet=1, armor_heal=20, armor_use=50, physics_speed = physics_},
 		damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 	})
 	
